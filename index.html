@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="card-front">
+    <i class="fa-solid fa-circle fa-2x fa-icon"></i>
+    <i class="fa-regular fa-circle fa2-icon"></i>
+    <p class="digits">0000 0000 0000 0000</p>
+    <div class="name-exp">
+      <p class="name">JANE APPLESEED</p>
+      <P class="exp-date"><span class="exp-date-mm">MM</span><span>/</span><span class="exp-date-yy">YY</span></P>
+    </div>
+    
+
+  </div>
+  <div class="card-back">
+    <p class="cvv-back">000</p>
+    
+  </div>
+  <div class="color-background">
+    
+  </div>
+  <div class="form-container">
+    <form action="">
+      <span class="card-holder">CARDHOLDERS NAME</span>
+      <input class="holder-input" maxlength="20" autocomplete="off" type="text" placeholder="e.g. Jane Appleseed" name="" id="card-name">
+      <span class="card-num">CARD NUMBER</span>
+      <input class="num-input" type="text" autocomplete="off" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" name="" id="card-number">
+      <span class="wrong-span active">Wrong format,numbers only</span>
+      <span class="exp">EXP. DATE (MM/YY)</span> <span class="cvv-text">CVV</span>
+      <div class="last-input">
+        <input type="text" class="mm"  autocomplete="off" placeholder="MM" maxlength="2" id="mm">
+        <input type="text" class="yy"  autocomplete="off" placeholder="YY" maxlength="2" id="yy">
+        <input type="text" class="cvv"  autocomplete="off" placeholder="e.g. 123" maxlength="3" id="cvv">
+      </div>
+      <span class="blank active">Can't be blank</span>
+      <span class="blank-last active">Can't be blank</span>
+      <button class="btn" type="button">Confirm</button>
+      <div class="attribution">
+        <span> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></span>
+        <span>Coded by <a href="https://github.com/kemichris">Kemi Chris</a></span>
+      </div>
+    </form>
+  </div>
+  
+  <div class="thank-you active">
+    <img src="icon-complete.svg" alt="">
+    <h1>THANK YOU</h1>
+    <P class="thank-p">We've added your card details</P>
+    <BUtton class="thank-btn">Continue</BUtton>
+  </div>
+
+ 
+  
+  
+  <script src="index.js"></script>
+</body>
+</html>
